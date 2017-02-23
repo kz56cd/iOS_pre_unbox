@@ -14,6 +14,8 @@
 		E6FE973C1E5EE6BA0089371F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FE973A1E5EE6BA0089371F /* LaunchScreen.storyboard */; };
 		E6FE97471E5EE6BA0089371F /* preUnboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FE97461E5EE6BA0089371F /* preUnboxTests.swift */; };
 		E6FE97531E5EE76F0089371F /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FE97521E5EE76F0089371F /* Unbox.framework */; };
+		E6FE97561E5EE8680089371F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FE97551E5EE8680089371F /* User.swift */; };
+		E6FE97581E5EE9230089371F /* UserInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E6FE97571E5EE9230089371F /* UserInfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		E6FE97461E5EE6BA0089371F /* preUnboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preUnboxTests.swift; sourceTree = "<group>"; };
 		E6FE97481E5EE6BA0089371F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6FE97521E5EE76F0089371F /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
+		E6FE97551E5EE8680089371F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E6FE97571E5EE9230089371F /* UserInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = UserInfo.json; path = ../UserInfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +85,14 @@
 		E6FE97301E5EE6BA0089371F /* preUnbox */ = {
 			isa = PBXGroup;
 			children = (
+				E6FE97571E5EE9230089371F /* UserInfo.json */,
 				E6FE97311E5EE6BA0089371F /* AppDelegate.swift */,
 				E6FE97331E5EE6BA0089371F /* ViewController.swift */,
 				E6FE97351E5EE6BA0089371F /* Main.storyboard */,
 				E6FE97381E5EE6BA0089371F /* Assets.xcassets */,
 				E6FE973A1E5EE6BA0089371F /* LaunchScreen.storyboard */,
 				E6FE973D1E5EE6BA0089371F /* Info.plist */,
+				E6FE97551E5EE8680089371F /* User.swift */,
 			);
 			path = preUnbox;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FE97581E5EE9230089371F /* UserInfo.json in Resources */,
 				E6FE973C1E5EE6BA0089371F /* LaunchScreen.storyboard in Resources */,
 				E6FE97391E5EE6BA0089371F /* Assets.xcassets in Resources */,
 				E6FE97371E5EE6BA0089371F /* Main.storyboard in Resources */,
@@ -233,6 +240,7 @@
 			files = (
 				E6FE97341E5EE6BA0089371F /* ViewController.swift in Sources */,
 				E6FE97321E5EE6BA0089371F /* AppDelegate.swift in Sources */,
+				E6FE97561E5EE8680089371F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

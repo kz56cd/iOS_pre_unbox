@@ -7,19 +7,43 @@
 //
 
 import UIKit
+import Unbox
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        shouldGetData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    // private
+    
+    private func shouldGetData() {
+        guard let data = getData() else {
+            return
+        }
+        do {
+            let user:User = try unbox(data: data)
+            print(user)
+        } catch {
+            print("some error: \(error)")
+        }
+    }
+    
+    private func getData() -> Data? {
+        guard let path = Bundle.main.path(forResource: "UserInfo", ofType: "json"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+                return nil
+        }
+        return data
+    }
 
 }
 

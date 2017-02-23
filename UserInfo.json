@@ -1,0 +1,14 @@
+{
+    "name": "John",
+    "age": 27,
+    "activities": {
+        "running": {
+            "distance": 300
+        }
+    },
+    "devices": [
+                "Macbook Pro",
+                "iPhone",
+                "iPad"
+                ]
+}
