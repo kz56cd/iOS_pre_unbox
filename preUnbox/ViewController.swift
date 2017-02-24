@@ -26,9 +26,7 @@ class ViewController: UIViewController {
     // private
     
     private func shouldGetData() {
-        guard let data = getData() else {
-            return
-        }
+        guard let data = getData() else { return }
         do {
             let user:User = try unbox(data: data)
             print(user)

@@ -1,6 +1,7 @@
 {
     "name": "John",
     "age": 27,
+    "profession": 1,
     "activities": {
         "running": {
             "distance": 300
